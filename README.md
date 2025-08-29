@@ -65,7 +65,9 @@ npm test
 ```
 ### Probar la API Manualmente
 
-Una vez desplegada, puedes probar la API con la colección de Postman adjunta.
+Una vez desplegada, se puede probar la API con la colección de Postman adjunta.
+
+Las evidencias de los tests y de la métrica en cloudwatch esta en el archivo evidencias/Evidencias Reto Técnico.docx
 
 
 
