@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "886ac851-0190-4cdd-912b-5eec9252e62a",
+		"name": "Todo-api-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40341045"
+	},
+	"item": [
+		{
+			"name": "Listar todos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zrfvmg0j53.execute-api.us-east-1.amazonaws.com/prod/todos",
+					"protocol": "https",
+					"host": [
+						"zrfvmg0j53",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Todo por Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://zrfvmg0j53.execute-api.us-east-1.amazonaws.com/prod/todos/f1645a9c-76dd-4d88-8a1b-6b98b012d051",
+					"protocol": "https",
+					"host": [
+						"zrfvmg0j53",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todos",
+						"f1645a9c-76dd-4d88-8a1b-6b98b012d051"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Todo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Subir repositorio a Github 1633\",\r\n    \"description\": \"Subir a Github repositorio del reto técnico 1633\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://zrfvmg0j53.execute-api.us-east-1.amazonaws.com/prod/todos",
+					"protocol": "https",
+					"host": [
+						"zrfvmg0j53",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar todo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Subir repositorio a Github edited 1634\",\r\n    \"description\": \"Subir a Github repositorio del reto técnico edited 1634\",\r\n    \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://zrfvmg0j53.execute-api.us-east-1.amazonaws.com/prod/todos/9b813e28-5c65-4968-8958-e30d32fb5457",
+					"protocol": "https",
+					"host": [
+						"zrfvmg0j53",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todos",
+						"9b813e28-5c65-4968-8958-e30d32fb5457"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete todo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://zrfvmg0j53.execute-api.us-east-1.amazonaws.com/prod/todos/cb80eeab-aa05-4735-ac2e-fa75c1456213",
+					"protocol": "https",
+					"host": [
+						"zrfvmg0j53",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todos",
+						"cb80eeab-aa05-4735-ac2e-fa75c1456213"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
